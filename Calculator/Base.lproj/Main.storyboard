@@ -34,7 +34,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
                                 <connections>
-                                    <action selector="multi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIu-P7-jM4"/>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIu-P7-jM4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxE-In-cGq">
@@ -55,8 +55,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="/"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRv-vS-1NM">
-                                <rect key="frame" x="165" y="257" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaT-xU-Krh">
+                                <rect key="frame" x="133" y="267" width="62" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,7 +67,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="answer" destination="rRv-vS-1NM" id="NkE-dK-LD4"/>
+                        <outlet property="answer" destination="vaT-xU-Krh" id="SmE-sN-IzZ"/>
                         <outlet property="firstNumber" destination="eIn-2l-qyN" id="Ds1-2g-gpP"/>
                         <outlet property="secondNumber" destination="MLF-aa-lnS" id="Lb4-Tq-Y8a"/>
                     </connections>
