@@ -21,8 +21,7 @@ class ViewController: UIViewController {
             
             let solution = numOne + numTwo;
             
-            answer.text = String(format: "%.2f", solution)
-            answer.text = "Answer:\(solution)"
+            answer.text = String(format: "Answer: %.2f", solution)
         } else {
             answer.text = "Answer: INVALID"
         }
@@ -34,10 +33,9 @@ class ViewController: UIViewController {
             
             let solution = numOne - numTwo;
             
-            answer.text = String(format: "%.2f", solution)
-            answer.text = "Answer:\(solution)"
+            answer.text = String(format: "Answer: %.2f", solution)
         } else {
-            answer.text = "Answer: INVALID"
+            answer.text = "INVALID"
         }
         answer.sizeToFit()
     }
@@ -47,8 +45,7 @@ class ViewController: UIViewController {
             
             let solution = numOne * numTwo;
             
-            answer.text = String(format: "%.2f", solution)
-            answer.text = "Answer:\(solution)"
+            answer.text = String(format: "Answer: %.2f", solution)
         } else {
             answer.text = "Answer: INVALID"
         }
@@ -58,10 +55,13 @@ class ViewController: UIViewController {
     @IBAction func divide(_ sender: Any) {
         if let numOne = Double(firstNumber.text!), let numTwo = Double(secondNumber.text!) {
             
-            let solution = numOne / numTwo;
-            
-            answer.text = String(format: "%.2f", solution)
-            answer.text = "Answer:\(solution)"
+            if numTwo != 0 {
+                let solution = numOne / numTwo
+                
+                answer.text = String(format: "Answer: %.2f", solution)
+            } else {
+                answer.text = "Answer: Cannot divide by zero"
+            }
         } else {
             answer.text = "Answer: INVALID"
         }
