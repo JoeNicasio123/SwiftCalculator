@@ -28,7 +28,46 @@ class ViewController: UIViewController {
         }
         answer.sizeToFit()
     }
-        
+    
+    @IBAction func sub(_ sender: Any) {
+        if let numOne = Double(firstNumber.text!), let numTwo = Double(secondNumber.text!) {
+            
+            let solution = numOne - numTwo;
+            
+            answer.text = String(format: "%.2f", solution)
+            answer.text = "Answer:\(solution)"
+        } else {
+            answer.text = "Answer: INVALID"
+        }
+        answer.sizeToFit()
+    }
+    
+    @IBAction func multi(_ sender: Any) {
+        if let numOne = Double(firstNumber.text!), let numTwo = Double(secondNumber.text!) {
+            
+            let solution = numOne * numTwo;
+            
+            answer.text = String(format: "%.2f", solution)
+            answer.text = "Answer:\(solution)"
+        } else {
+            answer.text = "Answer: INVALID"
+        }
+        answer.sizeToFit()
+    }
+    
+    @IBAction func divide(_ sender: Any) {
+        if let numOne = Double(firstNumber.text!), let numTwo = Double(secondNumber.text!) {
+            
+            let solution = numOne / numTwo;
+            
+            answer.text = String(format: "%.2f", solution)
+            answer.text = "Answer:\(solution)"
+        } else {
+            answer.text = "Answer: INVALID"
+        }
+        answer.sizeToFit()
+    }
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
